@@ -9,7 +9,7 @@ const maxXP = 100;
 const xpAuditLogChannelID = "655824388037279815";
 const mainChatChannelID = "655824345285001226";
 const fireBaseURL = process.env.fireBaseURL;
-const xpName = "xp";
+const xpName = "valor";
 /* SETTINGS END */
 
 /* PACKAGES START */
@@ -34,8 +34,8 @@ firebase.initializeApp(firebaseConfig)
 
 bot.on('ready', () => {
   console.log('Turned on Discord bot');
-  bot.user.setActivity(`${bot.users.size} comrades!`, { type: 'WATCHING' });
-  bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`**Resuming processes!** :wave:`)
+  bot.user.setActivity(`${bot.users.size} Clanners!`, { type: 'WATCHING' });
+  bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`**RCM Acitivated** :wink:`)
 })
 
 bot.on('message', async message => {
